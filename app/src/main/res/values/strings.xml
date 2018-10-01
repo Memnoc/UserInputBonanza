@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">User Input Bonanza</string>
+    <string name="plain_text_button_label">Plain Text</string>
+    <string name="name">Name</string>
+    <string name="radio_button_label">Radio Button</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="checkboxlbl">Checkbox</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="switchlbl">Switch</string>
+    <string name="switchR">Switch</string>
+    <string name="spinnerlbl">Spinner</string>
+    <string name="togglelbl">Toggle</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="plain_text">Plain Text</string>
+    <string name="radio_button">Radio Button</string>
+    <string name="switchR2">Switch</string>
+    <string name="toggle">Toggle</string>
+    <string name="spinner">Spinner</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+</resources>
