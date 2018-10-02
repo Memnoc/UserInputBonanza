@@ -16,6 +16,7 @@
     <string name="switchR2">Switch</string>
     <string name="toggle">Toggle</string>
     <string name="spinner">Spinner</string>
+    <string name="welcome_to_the_text_activity">Welcome to the Text activity!</string>
     <string-array name="planets_array">
         <item>Mercury</item>
         <item>Venus</item>

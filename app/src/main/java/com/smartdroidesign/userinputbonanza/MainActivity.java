@@ -1,5 +1,6 @@
 package com.smartdroidesign.userinputbonanza;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String name = editTextField.getText().toString();
                 Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
+                startStory(name);
             }
         });
 
@@ -101,6 +103,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void startStory(String name) {
+        Intent intent = new Intent(MainActivity.this, TextActivity.class);
+        intent.putExtra("name", name);
+        startActivity(intent);
+    }
+
     private void spinnerPresenter() {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.planets_array, android.R.layout.simple_spinner_item);
@@ -109,3 +117,23 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "Spinner options is selected!!", Toast.LENGTH_SHORT).show();
     }
 }
+
+
+
+
+
+//    User Input Bonanza
+//
+//        We learned how to get data from an EditText, which is really important. It also applies to all sorts of widgets used for user input.
+//
+//        Create a simple app that has a bunch of different controls from the Widgets section in the Palette.
+//        For each control, get the value the user enters and then display it in the log or a Toast.
+//        Some specific ones to try include:
+//
+//        EditText with a different format
+//        RadioButton
+//        CheckBox
+//        Switch
+//        ToggleButton
+//        Spinner
+
